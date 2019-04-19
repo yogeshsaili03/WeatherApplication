@@ -1,0 +1,20 @@
+ <div class="divme"></div>
+      <div class="weather-forecast" role="main">
+        <div class="location">{{location.name}},{{location.country}}</div>
+        <div class="date">{{mainData.date|date:'EEEE,LLLL dd'}}</div>
+        <div class="desc">Overcast</div>
+        <div class="current">
+          <div class="visual">
+            <div class="icon cloudy">
+            <img src=http:{{current.condition.icon}}>
+          </div>
+            <div class="temp">{{current.temp_c}}</div>
+            <div class="scale">&#8451;</div>
+          </div>
+          <div class="description">
+            <div class="humidity">{{current.humidity}}</div>
+            <div class="wind">{{current.wind_mph}} mph {{current.wind_dir}}</div>
+            <div class="pollen">{{mainData.astro.sunrise}}</div>
+          </div>
+        </div>
+      </div>

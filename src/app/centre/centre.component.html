@@ -1,0 +1,16 @@
+
+<body>
+  <div><input #city type="text" placeholder="Enter Country or City Name">
+    <br>
+    <br>
+    <button class="button1" (click)="getWeather(city.value)">Search</button>
+    <br>
+    <br>
+
+    <div *ngIf="city.value !=''" >     
+      <app-current-weather [location]="location" [mainData]="mainData" [current]="current"></app-current-weather>
+      <app-fiveday-forecast [weatherForecastData]="weatherForecastData" [mainData]="mainData"></app-fiveday-forecast>
+    </div>
+    
+  </div>
+</body>

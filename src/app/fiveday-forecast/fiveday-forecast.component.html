@@ -1,0 +1,16 @@
+<div class="seven-day">
+        <div *ngFor="let m of weatherForecastData">
+          <div class="seven-day-fc">
+
+            <div class="date">{{m.date|date:'EEEE'}}</div>
+            <img class="icon" src=http:{{m.day.condition.icon}}>
+            <div class="seven-day-temp">
+              <div class="temp-high">{{m.day.maxtemp_c}}&deg;</div>
+              <div class="temp-low">{{m.day.mintemp_c}}&deg;</div>
+            </div>
+            <div class="pcount">{{mainData.day.condition.text}}</div>
+
+
+          </div>
+        </div>
+      </div>

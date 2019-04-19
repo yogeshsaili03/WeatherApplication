@@ -1,0 +1,235 @@
+input[type="text"] {
+    width: 20%;
+    padding: 14px;
+    text-transform: capitalize;
+    
+    border: none;
+    background: transparent;
+   
+    text-align: center;
+    font-weight: bold;
+   
+  outline: 0;
+ 
+  border-bottom: 1px solid skyblue;
+}
+
+.inhere {
+    margin-left: 20px;
+    width: 450px;
+    height: 80px;
+    border: none;
+    display: -webkit-flex;
+    border-top: 1px solid skyblue;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+  }
+  
+  
+
+.divme{
+    border-top: 1px solid grey;
+    box-shadow: 0 -5px 5px -5px #333;
+    padding: 10px;
+    text-align: left;
+}
+
+.button1 {
+    width: 7%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 3px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button1:hover span {
+    padding-right: 25px;
+}
+
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    align-self: center
+  }
+  
+  body {
+    font-family: Roboto, Arial;
+    font-size: 0.8em;
+    color: #666;
+    overflow-y: hidden;
+  }
+  
+  .icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+  }
+  
+  .weather-forecast {
+    width: 80%;
+    padding: 10px 10px 0 10px;
+    display: inline-block;
+  }
+  
+  /* Header row */
+  
+  .location {
+    font-size: 3em;
+    color: #444;
+  }
+  
+  /* Current Weather Summary */
+  .current {
+    overflow: auto;
+    width:100%;
+    margin-bottom: 15px;
+  }
+  
+  .current .visual {
+    width: 52%;
+    float: left;
+  }
+  
+  .current .description {
+    width: 48%;
+    float: left;
+  }
+  
+  /* Current Weather - Visual */
+  
+  .visual .icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .temp {
+    font-size: 2.5em;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .scale {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 6px;
+    color: #888;
+  }
+  
+  /* General Labels */
+  
+  .wind:before {
+    content: "Wind: ";
+    color: #888;
+  }
+  
+  .precip:before {
+    content: "Precipitation: ";
+    color: #888;
+  }
+  
+  .humidity:before {
+    content: "Humidity: ";
+    color: #888;
+  }
+  
+  .pollen:before {
+    content: "Sunrise: ";
+    color: #888;
+  }
+  
+  .pcount:before {
+    content: "Status: ";
+    color: #888;
+  }
+  
+  
+  /* Seven Day Forecast */
+  
+  .seven-day div {
+    vertical-align: middle;
+}
+  
+  .seven-day-fc {
+    border-top: 1px solid rgba(0,0,0,0.2);
+    margin: 4px 0 0 0;
+    padding: 10px;
+  }
+  
+  .seven-day-fc div {
+    display: inline-block;
+  }
+  
+  .seven-day-fc .date {
+    font-weight: bold;
+    color: #444;
+    width: 30%;
+  }
+  
+  .seven-day-fc .icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .seven-day-fc .seven-day-temp {
+    text-align: center;
+    width: 30%;
+    
+  }
+  
+  .seven-day-fc .temp-high {
+    color: #444;
+  
+  }
+  
+  .seven-day-fc .temp-low {
+    color: #888;
+  }
+  
+  .seven-day-fc .temp-low,
+  .seven-day-fc .temp-high {
+    display: block;
+  }
+  
+  .seven-day-fc .pcount {
+    text-align: center;
+    width: 16%;
+  }
+  
